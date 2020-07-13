@@ -1,7 +1,7 @@
 
-# Welcome to your CDK Python project!
+# Welcome to your PDCA Serverless CDK Python project!
 
-This is a blank project for Python development with CDK.
+This is a PDCA serverless project for Python development with CDK.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -37,10 +37,30 @@ Once the virtualenv is activated, you can install the required dependencies.
 $ pip install -r requirements.txt
 ```
 
+Besides python, you also need to have node.js installed, because cdk is a node.js based application
+
+
+Once node is installed, install cdk locally using
+
+```
+npm i
+```
+
+You also need to have aws credentials (token and secret) configured locally
+
+
+After activating your environment, execute
+
+```
+aws configure
+```
+
+and provide aws credentials, provided to you by PDCA support personnel.
+
 At this point you can now synthesize the CloudFormation template for this code.
 
 ```
-$ cdk synth
+$ npx cdk synth
 ```
 
 To add additional dependencies, for example other CDK libraries, just add

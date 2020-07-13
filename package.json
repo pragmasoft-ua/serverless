@@ -1,0 +1,24 @@
+{
+  "name": "pdca-serverless",
+  "version": "1.0.0",
+  "description": "pdca serverless lambda application using cdk",
+  "scripts": {
+    "cdk": "cdk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/arium-devs/serverless.git"
+  },
+  "keywords": [
+    "cdk",
+    "serverless",
+    "lambda",
+    "python"
+  ],
+  "author": "Dmytro V. Zemnytskyi (pragmasoft@gmail.com)",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/arium-devs/serverless#readme",
+  "devDependencies": {
+    "aws-cdk": "^1.51.0"
+  }
+}
