@@ -39,6 +39,8 @@ $ pip install -r requirements.txt
 
 Besides python, you also need to have node.js installed, because cdk is a node.js based application
 
+consider using nvm https://github.com/nvm-sh/nvm for node.js installation and version management
+
 
 Once node is installed, install cdk locally using
 
