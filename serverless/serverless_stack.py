@@ -16,7 +16,7 @@ class ServerlessStack(core.Stack):
         layer = _lambda.LayerVersion.from_layer_version_arn(self, 'AWSLambda-Python37-SciPy1x', 'arn:aws:lambda:us-east-1:668099181075:layer:AWSLambda-Python37-SciPy1x:22')
 
         # The code that defines your stack goes here
-        my_lambda = _lambda.Function(self, 'HelloHandler', runtime=_lambda.Runtime.PYTHON_3_7,
+        my_lambda = _lambda.Function(self, 'HelloHandler', function_name="serverless-hello", runtime=_lambda.Runtime.PYTHON_3_7,
                                      code=_lambda.Code.asset('lambda'), handler='hello.handler', environment={'DATA_BUCKET' : bucket.bucket_name})
 
         my_lambda.add_layers(layer)

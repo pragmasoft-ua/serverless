@@ -13,7 +13,7 @@ import com.amazonaws.services.lambda.model.InvokeResult;
 
 public class HelloWorld {
     static Logger logger = Logger.getLogger(HelloWorld.class.getName());
-    static String FUNCTION_NAME = "serverless-HelloHandler2E4FBA4D-3X5VNIF1LU4G";
+    static String FUNCTION_NAME = "serverless-hello";
 
     public static void main(String... args) {
         invokeLambda();

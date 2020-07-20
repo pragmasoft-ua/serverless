@@ -9,3 +9,11 @@ __pycache__
 .cdk.staging
 cdk.out
 node_modules
+
+.vscode
+
+client/.vscode
+client/.settings
+client/target
+client/.classpath
+client/.project
