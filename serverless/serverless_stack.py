@@ -2,7 +2,8 @@ from aws_cdk import (
     core,
     aws_lambda as _lambda,
     aws_s3 as s3,
-    aws_s3_assets as s3_assets
+    aws_s3_assets as s3_assets,
+    aws_s3_notifications as s3n
 )
 
 
@@ -22,5 +23,7 @@ class ServerlessStack(core.Stack):
         my_lambda.add_layers(layer)
 
         bucket.grant_read_write(my_lambda)
+
+        bucket.add_event_notification(s3.EventType.OBJECT_CREATED, s3n.LambdaDestination(my_lambda), s3.NotificationKeyFilter(prefix="in") )
 
 

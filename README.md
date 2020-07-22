@@ -71,10 +71,10 @@ command.
 
 ## Useful commands
 
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+ * `npx cdk ls`          list all stacks in the app
+ * `npx cdk synth`       emits the synthesized CloudFormation template
+ * `npx cdk deploy`      deploy this stack to your default AWS account/region
+ * `npx cdk diff`        compare deployed stack with current state
+ * `npx cdk docs`        open CDK documentation
 
 Enjoy!
