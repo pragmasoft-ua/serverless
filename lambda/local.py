@@ -1,6 +1,6 @@
 import json
 
-import hello
+import reducer
 
-response = hello.handler({ 'path' : '/local'}, {})
+response = reducer.calculate(seed=634781, partitions=20)
 print(f'response: {json.dumps(response)}')
